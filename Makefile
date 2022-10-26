@@ -10,7 +10,7 @@ ifeq ("$(wildcard $(fname))","")
 	cp notes/template.md $(fname)
 	sed -i "1s/^/\# $(dfrmt)\n\n/" $(fname)
 endif
-	~/nvim.appimage $(fname)
+	vim $(fname)
 
 
 .PHONY: run diary
